@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Api\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D199F70-D8BF-4F61-8A3B-F47F11FD9D58}|EmployeeManagement.Api.csproj|c:\\users\\henry\\documents\\proyectogesti\u00F3nempleados\\backend\\employeemanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{5D199F70-D8BF-4F61-8A3B-F47F11FD9D58}|EmployeeManagement.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D199F70-D8BF-4F61-8A3B-F47F11FD9D58}|EmployeeManagement.Api.csproj|c:\\users\\henry\\documents\\proyectogesti\u00F3nempleados\\backend\\employeemanagement.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D199F70-D8BF-4F61-8A3B-F47F11FD9D58}|EmployeeManagement.Api.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D199F70-D8BF-4F61-8A3B-F47F11FD9D58}|EmployeeManagement.Api.csproj|c:\\users\\henry\\documents\\proyectogesti\u00F3nempleados\\backend\\employeemanagement.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D199F70-D8BF-4F61-8A3B-F47F11FD9D58}|EmployeeManagement.Api.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D199F70-D8BF-4F61-8A3B-F47F11FD9D58}|EmployeeManagement.Api.csproj|c:\\users\\henry\\documents\\proyectogesti\u00F3nempleados\\backend\\employeemanagement.api\\controllers\\employeescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,10 +19,20 @@
       "RelativeMoniker": "D:0:0:{5D199F70-D8BF-4F61-8A3B-F47F11FD9D58}|EmployeeManagement.Api.csproj|solutionrelative:controllers\\storescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\henry\\Documents\\Proyectos Visual Studio 2022\\EmployeeManagement.Infrastructure\\Data\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D199F70-D8BF-4F61-8A3B-F47F11FD9D58}|EmployeeManagement.Api.csproj|c:\\users\\henry\\documents\\proyectogesti\u00F3nempleados\\backend\\employeemanagement.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{5D199F70-D8BF-4F61-8A3B-F47F11FD9D58}|EmployeeManagement.Api.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\henry\\Documents\\Proyectos Visual Studio 2022\\EmployeeManagement.Application\\Mapping\\MappingProfile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA287AFD-4CEC-420F-8497-08DCE5920606}|..\\EmployeeManagement.Application\\EmployeeManagement.Application.csproj|c:\\users\\henry\\documents\\proyectogesti\u00F3nempleados\\backend\\employeemanagement.application\\mapping\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EB2D3C68-D332-4FDB-9B16-098D65AFBE8E}|..\\EmployeeManagement.Infrastructure\\EmployeeManagement.Infrastructure.csproj|c:\\users\\henry\\documents\\proyectogesti\u00F3nempleados\\backend\\employeemanagement.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Infrastructure\\Migrations\\20250724185946_InitialCreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Infrastructure\\Migrations\\20250724173928_AddStoreRelationToEmployee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,30 +42,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Api\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Api\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAADsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T20:35:47.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "20250724185946_InitialCreate.cs",
+              "DocumentMoniker": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Infrastructure\\Migrations\\20250724185946_InitialCreate.cs",
+              "RelativeDocumentMoniker": "..\\EmployeeManagement.Infrastructure\\Migrations\\20250724185946_InitialCreate.cs",
+              "ToolTip": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Infrastructure\\Migrations\\20250724185946_InitialCreate.cs",
+              "RelativeToolTip": "..\\EmployeeManagement.Infrastructure\\Migrations\\20250724185946_InitialCreate.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T18:59:46.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MappingProfile.cs",
+              "DocumentMoniker": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Application\\Mapping\\MappingProfile.cs",
+              "RelativeDocumentMoniker": "..\\EmployeeManagement.Application\\Mapping\\MappingProfile.cs",
+              "ToolTip": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Application\\Mapping\\MappingProfile.cs",
+              "RelativeToolTip": "..\\EmployeeManagement.Application\\Mapping\\MappingProfile.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwAwAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T18:28:00.612Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20250724173928_AddStoreRelationToEmployee.cs",
+              "DocumentMoniker": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Infrastructure\\Migrations\\20250724173928_AddStoreRelationToEmployee.cs",
+              "RelativeDocumentMoniker": "..\\EmployeeManagement.Infrastructure\\Migrations\\20250724173928_AddStoreRelationToEmployee.cs",
+              "ToolTip": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Infrastructure\\Migrations\\20250724173928_AddStoreRelationToEmployee.cs",
+              "RelativeToolTip": "..\\EmployeeManagement.Infrastructure\\Migrations\\20250724173928_AddStoreRelationToEmployee.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T17:39:28.47Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\EmployeeManagement.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "..\\EmployeeManagement.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T17:11:54.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Api\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
               "ToolTip": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Api\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-07-24T13:28:51.157Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Api\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Api\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABUAAABIAAAAAAAAAA==",
+              "ViewState": "AgIAACIAAAAAAAAAAAAmwCUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-24T04:03:21.155Z",
               "EditorCaption": ""
@@ -68,9 +143,10 @@
               "RelativeDocumentMoniker": "Controllers\\StoresController.cs",
               "ToolTip": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Api\\Controllers\\StoresController.cs",
               "RelativeToolTip": "Controllers\\StoresController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T02:22:58.143Z"
+              "WhenOpened": "2025-07-24T02:22:58.143Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -80,34 +156,10 @@
               "RelativeDocumentMoniker": "Controllers\\EmployeesController.cs",
               "ToolTip": "C:\\Users\\henry\\Documents\\ProyectoGesti\u00F3nEmpleados\\Backend\\EmployeeManagement.Api\\Controllers\\EmployeesController.cs",
               "RelativeToolTip": "Controllers\\EmployeesController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAC8AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwAoAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-07-24T02:22:28.454Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\henry\\Documents\\Proyectos Visual Studio 2022\\EmployeeManagement.Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Proyectos Visual Studio 2022\\EmployeeManagement.Infrastructure\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\henry\\Documents\\Proyectos Visual Studio 2022\\EmployeeManagement.Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "..\\..\\..\\Proyectos Visual Studio 2022\\EmployeeManagement.Infrastructure\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T02:20:04.971Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MappingProfile.cs",
-              "DocumentMoniker": "C:\\Users\\henry\\Documents\\Proyectos Visual Studio 2022\\EmployeeManagement.Application\\Mapping\\MappingProfile.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\Proyectos Visual Studio 2022\\EmployeeManagement.Application\\Mapping\\MappingProfile.cs",
-              "ToolTip": "C:\\Users\\henry\\Documents\\Proyectos Visual Studio 2022\\EmployeeManagement.Application\\Mapping\\MappingProfile.cs",
-              "RelativeToolTip": "..\\..\\..\\Proyectos Visual Studio 2022\\EmployeeManagement.Application\\Mapping\\MappingProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T02:19:09.776Z"
             }
           ]
         }

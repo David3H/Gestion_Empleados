@@ -8,8 +8,19 @@ namespace EmployeeManagement.Application.Mapping
     {
         public MappingProfile() 
         { 
-            CreateMap<Employee, EmployeeDto>().ReverseMap();
-            CreateMap<Store, StoreDto>().ReverseMap();
+            CreateMap<Employee, EmployeeDto>()
+                .ReverseMap()
+                .ForMember(dest => dest.Id, opt => opt.Ignore())
+                .AfterMap((dto, employee) => {
+                    if (dto.StoreId > 0)
+                    {
+                        employee.Store = new Store { Id = dto.StoreId };
+                    }
+                });
+
+            CreateMap<Store, StoreDto>()
+                .ReverseMap()
+                .ForMember(dest => dest.Id, opt => opt.Ignore());
         }
     }
 }
