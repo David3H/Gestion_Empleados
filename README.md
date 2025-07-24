@@ -31,3 +31,13 @@ Endpoints
 - `PUT /api/Stores/{"id"}`  
   Body: `{ "name": "string", "address": "string", "active": bool }`
 - `DELETE /api/Stores/{"id"}` 
+
+Prueba Unitaria
+Pruebas unitarias básicas usando **xUnit** y **Moq**
+Ejemplo: `EmployeesControllerTests`
+- Verifica que el endpoint `GET /api/employees` devuelva un resultado `200 OK`.
+- Usa `Moq` para simular dependencias (`IEmployeeRepository`, `IStoreRepository`, `IMapper`).
+- Aísla la lógica del controlador para no depender de una base de datos real.
+
+Ejecución
+1. Abrir el **Test Explorer** (`Prueba > Ejecutar todas las pruebas`).
