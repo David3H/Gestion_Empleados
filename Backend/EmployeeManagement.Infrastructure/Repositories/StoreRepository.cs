@@ -11,29 +11,29 @@ namespace EmployeeManagement.Infrastructure.Repositories
         private readonly AppDbContext _appDbContext = appDbContext;
         public async Task AddStoreAsync(Store store)
         {
-            _appDbContext.Stores.Add(store);
+            _appDbContext.Store.Add(store);
             await _appDbContext.SaveChangesAsync();
         }
 
         public async Task DeleteStoreAsync(int id)
         {
-            var store = await _appDbContext.Stores.FindAsync(id);
+            var store = await _appDbContext.Store.FindAsync(id);
             if (store != null)
             {
-                _appDbContext.Stores.Remove(store);
+                _appDbContext.Store.Remove(store);
                 await _appDbContext.SaveChangesAsync();
             }
         }
 
         public async Task<IEnumerable<Store>> GetAllStoreAsync() =>
-            await _appDbContext.Stores.ToListAsync();
+            await _appDbContext.Store.ToListAsync();
 
         public async Task<Store> GetStoreByIdAsync(int id) =>
-            await _appDbContext.Stores.FindAsync(id);
+            await _appDbContext.Store.FindAsync(id);
 
         public async Task UpdateStoreAsync(Store store)
         {
-           _appDbContext.Stores.Update(store);
+           _appDbContext.Store.Update(store);
             await _appDbContext.SaveChangesAsync();
         }
     }

@@ -5,7 +5,7 @@ namespace EmployeeManagement.Infrastructure.Data
 {
     public class AppDbContext(DbContextOptions<AppDbContext> options) : DbContext(options)
     {
-        public DbSet<Employee> Employees { get; set; };
-        public DbSet<Store> Stores { get; set; };
+        public DbSet<Employee> Employee { get; set; }
+        public DbSet<Store> Store { get; set; }
     }
 }
