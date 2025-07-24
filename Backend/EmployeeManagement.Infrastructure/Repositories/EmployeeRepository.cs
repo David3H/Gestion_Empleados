@@ -11,30 +11,31 @@ namespace EmployeeManagement.Infrastructure.Repositories
 
         public async Task AddEmployeeAsync(Employee employee)
         {
-            _appDbContext.Employees.Add(employee);
+            _appDbContext.Employee.Add(employee);
             await _appDbContext.SaveChangesAsync();
         }
 
         public async Task DeleteEmployeAsync(int id)
         {
-           var employee = await _appDbContext.Employees.FindAsync(id);
+           var employee = await _appDbContext.Employee.FindAsync(id);
             if (employee != null)
             {
-                _appDbContext.Employees.Remove(employee);
+                _appDbContext.Employee.Remove(employee);
                 await _appDbContext.SaveChangesAsync();
 
             }
         }
-
         public async Task<IEnumerable<Employee>> GetAllEmployeeAsync() =>
-            await _appDbContext.Employees.ToListAsync();
+            await _appDbContext.Employee.ToListAsync();
 
-        public async Task<Employee> GetEmployeeByIdAsync(int id) =>
-           await _appDbContext.Employees.FindAsync(id);
+        public async Task<Employee> GetEmployeeByIdAsync(int id) => 
+            await _appDbContext.Employee
+             .Include(e => e.Store)
+             .FirstOrDefaultAsync(e => e.Id == id);
 
         public async Task UpdateEmployeeAsync(Employee employee)
         {
-            _appDbContext.Employees.Update(employee);
+            _appDbContext.Employee.Update(employee);
             await _appDbContext.SaveChangesAsync();
         }
     }
