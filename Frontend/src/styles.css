@@ -1,4 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+.mat-mdc-snack-bar-container.green-success-snackbar {
+  background: #4CAF50;
+  color: #fff;
+}
+
+.mat-mdc-snack-bar-container.red-error-snackbar {
+  background: #F44336;
+  color: #fff;
+}
+
+.mat-mdc-snack-bar-container.blue-info-snackbar {
+  background: #2196F3;
+  color: #fff;
+}
+
+.mat-mdc-snack-bar-container .mat-mdc-button {
+  color: #fff !important;
+}
+
+.green-success-snackbar,
+.red-error-snackbar,
+.blue-info-snackbar {
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
