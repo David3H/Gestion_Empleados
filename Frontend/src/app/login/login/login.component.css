@@ -1,0 +1,8 @@
+.form{
+  height: 100vh;
+}
+.color{
+  background-color: #efefef;
+  max-width: 400px;
+  width: 100%;
+}
