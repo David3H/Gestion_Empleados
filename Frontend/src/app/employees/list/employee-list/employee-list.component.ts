@@ -8,6 +8,7 @@ import { CommonModule } from '@angular/common';
 import { HttpErrorResponse } from '@angular/common/http';
 import { FontAwesomeModule, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-employee-list',
@@ -16,7 +17,7 @@ import { faEdit, faTrash } from '@fortawesome/free-solid-svg-icons';
   styleUrl: './employee-list.component.css'
 })
 export class EmployeeListComponent implements OnInit {
-  constructor(library: FaIconLibrary) {
+  constructor(library: FaIconLibrary, private authService: AuthService) {
     library.addIcons(faEdit, faTrash);
   }
 router = inject(Router);
@@ -57,6 +58,10 @@ edit(id: number) { this.router.navigate(['/edit', id]); }
       },
       error: (err: HttpErrorResponse) => this.notif.error(err.error.message || err.message),
     });
+  }
+
+  logout() {
+    this.authService.logout();
   }
 
   changePage(p: number) {

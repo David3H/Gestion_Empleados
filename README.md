@@ -4,6 +4,7 @@ Sistema básico de gestión de empleados para una tienda
 Configiración
 1. Restaurar la base de datos ubicada en la carpeta Database
 # Backend
+- .NET 8
 Configuración
 1. Clonar repositorio
 2. Configurar connectionString en `appsettings.json`
@@ -39,5 +40,33 @@ Endpoints
 - Usa `Moq` para simular dependencias (`IEmployeeRepository`, `IStoreRepository`, `IMapper`).
 - Aísla la lógica del controlador para no depender de una base de datos real.
 
-Ejecución
+* Ejecución
 1. Abrir el **Test Explorer** (`Prueba > Ejecutar todas las pruebas`).
+
+* Decisión
+- Se configura los Cours en el backend para permitir peticiones desde el frontend y evitar bloqueos
+
+# Frontend
+- Angular 19+
+* Instalación y ejecución
+1. git clone https://github.com/David3H/Gestion_Empleados.git
+2. cd Frontend
+3. npm install
+4. ng serve
+* Uso
+- Credenciales login: usr: admin, pass: 123
+- Página de login: /login
+- CRUD de empleados en /
+* Estructura
+app/
+  core/
+    notifications/
+    interceptors/
+    guards/
+  employees/
+    list/
+    form/
+    services/
+  login/
+  app.routes.ts
+  app.module.ts

@@ -1,14 +1,20 @@
 <div class="container">
-  <h2>Listado Empleado</h2>
-
-  <div class="mb-3">
-    <input class="form-control" [(ngModel)]="filter" (ngModelChange)="load()" placeholder="Buscar por nombre o correo" />
+  <br>
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <h2>Listado Empleado</h2>
+    <button class="btn btn-outline-danger" (click)="logout()">Cerrar sesión</button>
   </div>
 
-  <button class="btn btn-primary mb-2" (click)="create()">+ Nuevo</button>
+  <div class="d-flex justify-content-start">
+    <button class="btn btn-success mb-2" (click)="create()">+ Agregar</button>
+  </div>
 
-  <table class="table table-striped">
-    <thead>
+  <div class="d-flex justify-content-end mb-4">
+    <input class="form-control" [(ngModel)]="filter" (ngModelChange)="load()" placeholder="Buscar...." style="max-width: 300px;"/>
+  </div>
+
+  <table class="table table-striped mb-5">
+    <thead class="table-dark">
       <tr>
         <th>Nombre</th>
         <th>Email</th>
@@ -37,7 +43,7 @@
     </tbody>
   </table>
 
-  <nav>
+  <nav class="d-flex justify-content-center">
     <ul class="pagination">
       <li class="page-item" [class.disabled]="page === 1">
         <a class="page-link" (click)="page = page - 1; load()">Anterior</a>

@@ -17,7 +17,7 @@ export class EmployeeFormComponent implements OnInit {
   fb = inject(FormBuilder);
   router = inject(Router);
   route = inject(ActivatedRoute);
-notif = inject(NotificationService);
+  notif = inject(NotificationService);
 private service = inject(EmployeeService);
 isEdit = false;
 form = this.fb.group({
