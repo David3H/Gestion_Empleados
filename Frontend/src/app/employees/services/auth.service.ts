@@ -1,6 +1,7 @@
 import { Injectable, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { tap } from 'rxjs/operators';
+import { Router } from '@angular/router';
 
 interface LoginResponse { token: string; }
 
@@ -8,7 +9,7 @@ interface LoginResponse { token: string; }
   providedIn: 'root'
 })
 export class AuthService {
-
+  private router = inject(Router);
   private http = inject(HttpClient);
   private readonly url = 'http://localhost:5221/api/Auth';
 
@@ -23,6 +24,7 @@ export class AuthService {
 
   logout() {
     localStorage.removeItem('jwt_token');
+    this.router.navigate(['/login']);
   }
 
   isLoggedIn() {
