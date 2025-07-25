@@ -27,7 +27,7 @@ namespace EmployeeManagement.Api.Controllers
             }
             catch (DbUpdateException ex)
             {
-                return StatusCode(500, "Error al obtener listado de empleado");
+                return StatusCode(500, new { message = "Error al obtener listado de empleado" });
             }
         }
 
@@ -42,7 +42,7 @@ namespace EmployeeManagement.Api.Controllers
             }
             catch (DbUpdateException ex)
             {
-                return StatusCode(500, "Error al obtener el empleado específico");
+                return StatusCode(500, new { message = "Error al obtener el empleado específico" });
             }
         }
 
@@ -50,7 +50,7 @@ namespace EmployeeManagement.Api.Controllers
         public async Task<IActionResult> Create(EmployeeDto dto)
         {
             var storeExists = await _storeRepository.GetStoreByIdAsync(dto.StoreId);
-            if (storeExists == null) return BadRequest("La tienda especificada no existe");
+            if (storeExists == null) return BadRequest(new { message = "La tienda especificada no existe" });
 
             var employee = _mapper.Map<Employee>(dto);
             employee.Store = null;
@@ -62,7 +62,7 @@ namespace EmployeeManagement.Api.Controllers
             }
             catch(DbUpdateException ex)
             {
-                return StatusCode(500, "Error al crear el empleado");
+                return StatusCode(500, new { message = "Error al crear el empleado" });
             }
         }
 
@@ -70,15 +70,15 @@ namespace EmployeeManagement.Api.Controllers
         public async Task<IActionResult> Update(int id, EmployeeDto dto)
         {
             if (id != dto.Id)
-                return BadRequest("El ID de la ruta no coincide con el ID del empleado");
+                return BadRequest(new { message = "El ID de la ruta no coincide con el ID del empleado" });
 
             var existingEmployee = await _employeeRepository.GetEmployeeByIdAsync(id);
             if (existingEmployee == null)
-                return NotFound("Empleado no encontrado");
+                return NotFound(new { message = "Empleado no encontrado" });
 
             var storeExists = await _storeRepository.GetStoreByIdAsync(dto.StoreId);
             if (storeExists == null)
-                return BadRequest("La tienda especificada no existe");
+                return BadRequest(new { message = "La tienda especificada no existe" });
 
             existingEmployee.FirstName = dto.FirstName;
             existingEmployee.LastName = dto.LastName;
@@ -95,7 +95,7 @@ namespace EmployeeManagement.Api.Controllers
             }
             catch (DbUpdateException ex)
             {
-                return StatusCode(500, "Error al actualizar el empleado");
+                return StatusCode(500, new { message = "Error al actualizar el empleado" });
             }
         }
         [HttpDelete("{id}")]
@@ -108,7 +108,7 @@ namespace EmployeeManagement.Api.Controllers
             }
             catch (DbUpdateException ex)
             {
-                return StatusCode(500, "Error al eliminar el empleado");
+                return StatusCode(500, new { message = "Error al eliminar el empleado" });
             }
         }
     }

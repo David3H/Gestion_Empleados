@@ -1,1 +1,67 @@
-<p>employee-form works!</p>
+<div class="container mt-4">
+  <h2>{{ isEdit ? 'Editar' : 'Nuevo' }} Empleado</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label>Nombre</label>
+        <input formControlName="firstName" class="form-control" />
+        <div *ngIf="form.get('firstName')?.touched && form.get('firstName')?.invalid" class="text-danger">
+          Nombre es requerido.
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <label>Apellido</label>
+        <input formControlName="lastName" class="form-control" />
+        <div *ngIf="form.get('lastName')?.touched && form.get('lastName')?.invalid" class="text-danger">
+          Apellido es requerido.
+        </div>
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label>Email</label>
+      <input formControlName="email" class="form-control" />
+      <div *ngIf="form.get('email')?.touched && form.get('email')?.errors?.['required']" class="text-danger">
+        Email es requerido.
+      </div>
+      <div *ngIf="form.get('email')?.touched && form.get('email')?.errors?.['email']" class="text-danger">
+        Email inválido.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label>Cargo</label>
+      <input formControlName="position" class="form-control" />
+      <div *ngIf="form.get('position')?.touched && form.get('position')?.invalid" class="text-danger">
+        Cargo es requerido.
+      </div>
+    </div>
+
+    <div class="mb-3">
+      <label>Fecha de Contratación</label>
+      <input type="date" formControlName="hireDate" class="form-control" />
+      <div *ngIf="form.get('hireDate')?.touched && form.get('hireDate')?.invalid" class="text-danger">
+        Fecha es requerida.
+      </div>
+    </div>
+
+    <div class="form-check mb-3">
+      <input type="checkbox" formControlName="active" class="form-check-input" id="activeCheck" />
+      <label class="form-check-label" for="activeCheck">Activo</label>
+    </div>
+
+    <div class="mb-3">
+      <label>ID Tienda</label>
+      <input formControlName="storeId" class="form-control" />
+      <div *ngIf="form.get('storeId')?.touched && form.get('storeId')?.invalid" class="text-danger">
+        ID de tienda es requerido.
+      </div>
+    </div>
+
+    <button class="btn btn-primary" type="submit">{{ isEdit ? 'Actualizar' : 'Crear' }}</button>
+    <button class="btn btn-secondary ms-2" type="button" (click)="cancel()">Cancelar</button>
+
+  </form>
+</div>

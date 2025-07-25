@@ -1,0 +1,15 @@
+<div class="container">
+  <h2>Iniciar Sesión</h2>
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label>Usuario</label>
+      <input formControlName="username" class="form-control" />
+    </div>
+    <div class="mb-3">
+      <label>Contraseña</label>
+      <input type="password" formControlName="password" class="form-control" />
+    </div>
+    <button class="btn btn-primary" type="submit" [disabled]="form.invalid">Entrar</button>
+  </form>
+</div>
+

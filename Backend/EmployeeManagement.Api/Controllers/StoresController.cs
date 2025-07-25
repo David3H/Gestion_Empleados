@@ -27,7 +27,7 @@ namespace EmployeeManagement.Api.Controllers
             }
             catch (DbUpdateException ex)
             {
-                return StatusCode(500, "Error al obtener el listado de tiendas");
+                return StatusCode(500, new { message = "Error al obtener el listado de tiendas" });
             }
         }
 
@@ -37,12 +37,12 @@ namespace EmployeeManagement.Api.Controllers
             try
             {
                 var store = await _storeRepository.GetStoreByIdAsync(id);
-                if (store == null) return NotFound("La tienda especificada no existe");
+                if (store == null) return NotFound(new { message = "La tienda especificada no existe" });
                 return Ok(_mapper.Map<StoreDto>(store));
             }
             catch (DbUpdateException ex)
             {
-                return StatusCode(500, "Error al obtener la tienda especificada");
+                return StatusCode(500, new { message = "Error al obtener la tienda especificada" });
             }
         }
 
@@ -57,17 +57,17 @@ namespace EmployeeManagement.Api.Controllers
             }
             catch (DbUpdateException ex)
             {
-                return StatusCode(500, "Error al crear la tienda");
+                return StatusCode(500, new { message = "Error al crear la tienda" });
             }
         }
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, StoreDto dto)
         {
-            if (id != dto.Id) return BadRequest("El ID de la ruta no coincide con el ID de la tienda");
+            if (id != dto.Id) return BadRequest(new { message = "El ID de la ruta no coincide con el ID de la tienda" });
 
             var existingStore = await _storeRepository.GetStoreByIdAsync(id);
-            if (existingStore == null) return NotFound("Tienda no encontrada");
+            if (existingStore == null) return NotFound(new { message = "Tienda no encontrada" });
 
             existingStore.Name = dto.Name;
             existingStore.Address = dto.Address;
@@ -80,7 +80,7 @@ namespace EmployeeManagement.Api.Controllers
             }
             catch (DbUpdateException ex)
             {
-                return StatusCode(500, "Error al actualizar la tienda");
+                return StatusCode(500, new { message = "Error al actualizar la tienda" });
             }
         }
 
@@ -94,7 +94,7 @@ namespace EmployeeManagement.Api.Controllers
             }
             catch (DbUpdateException ex)
             {
-                return StatusCode(500, "Error al eliminar la tienda");
+                return StatusCode(500, new { message = "Error al eliminar la tienda" });
             }
         }
     }

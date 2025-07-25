@@ -1,1 +1,53 @@
-<p>employee-list works!</p>
+<div class="container">
+  <h2>Listado Empleado</h2>
+
+  <div class="mb-3">
+    <input class="form-control" [(ngModel)]="filter" (ngModelChange)="load()" placeholder="Buscar por nombre o correo" />
+  </div>
+
+  <button class="btn btn-primary mb-2" (click)="create()">+ Nuevo</button>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Email</th>
+        <th>Cargo</th>
+        <th>Fecha Ingreso</th>
+        <th>Estado</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let e of employees">
+        <td>{{e.firstName}} {{e.lastName}}</td>
+        <td>{{e.email}}</td>
+        <td>{{e.position}}</td>
+        <td>{{ e.hireDate | date:'yyyy-MM-dd' }}</td>
+        <td>{{ e.active ? 'Activo' : 'Inactivo' }}</td>
+        <td>
+          <button class="btn btn-sm btn-warning me-2" (click)="edit(e.id!)">
+            <fa-icon [icon]="['fas','edit']"></fa-icon>
+          </button>
+          <button class="btn btn-sm btn-danger" (click)="delete(e.id)">
+            <fa-icon [icon]="['fas','trash']"></fa-icon>
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <nav>
+    <ul class="pagination">
+      <li class="page-item" [class.disabled]="page === 1">
+        <a class="page-link" (click)="page = page - 1; load()">Anterior</a>
+      </li>
+      <li class="page-item" [class.active]="i+1 === page" *ngFor="let p of pages; let i = index">
+        <a class="page-link" (click)="page = i+1; load()">{{i+1}}</a>
+      </li>
+      <li class="page-item" [class.disabled]="page === pages.length">
+        <a class="page-link" (click)="page = page + 1; load()">Siguiente</a>
+      </li>
+    </ul>
+  </nav>
+</div>
